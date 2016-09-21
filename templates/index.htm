@@ -1,0 +1,35 @@
+<!DOCTYPE>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <!--<title>首页</title>-->
+    <title>{$sm_config[0]}</title>
+    <link href="{$t_dir}css/common.css" rel="stylesheet" type="text/css" />
+    <link href="{$t_dir}css/layout.css" rel="stylesheet" type="text/css" />
+    <link href="{$t_dir}css/red.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div class="content border_bottom">
+    <ul id="sub_nav">
+        <li><a href="#">设为首页</a> </li>
+        <li><a href="#">加入收藏</a> </li>
+        <li class="nobg"><a href="#">联系我们</a> </li>
+    </ul>
+    <img src="{$t_dir}img/logo.jpg" alt="首页" name="logo" width="50" height="50" id="logo" /><br class="clear" />
+</div>
+<div class="content dgreen-bg">
+    <div class="content">
+        <ul id="main_nav">
+            <li class="nobg"><a href="index.php">网站首页</a> </li>
+            {section name=1 loop=$sm_class}
+            <li><a href="list.php?id={$sm_class[1].id}">{$sm_class[1].name}</a> </li>
+            {/section}
+            <li><a href="#">产品展示</a> </li>
+            <li><a href="#">企业资讯</a> </li>
+            <li><a href="#">联系我们</a> </li>
+        </ul>
+        <br class="clear"/>
+    </div>
+</div>
+</body>
+</html>
