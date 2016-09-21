@@ -9,6 +9,26 @@ $r = $db -> Get_user_shell_check($uid,$shell);
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
 </head>
 <body>
-
+<table>
+    <tbody>
+    <tr>
+        <th onclick="javascript:menu_tree('left_2');" align="middle">栏目管理</th>
+    </tr>
+    <tr id="left_2">
+        <td>
+            <table width="100%">
+                <tbody>
+                <tr>
+                    <td>
+                        <img src="images/menu.gif" align="absMiddle" border="0">
+                        &nbsp;<a href="admin_news_class.php" target="main">新闻分类</a>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </td>
+    </tr>
+    </tbody>
+</table>
 </body>
 </html>
