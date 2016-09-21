@@ -24,6 +24,18 @@ $r = $db -> Get_user_shell_check($uid,$shell);
                         &nbsp;<a href="admin_news_class.php" target="main">新闻分类</a>
                     </td>
                 </tr>
+                <tr>
+                    <td>
+                        <img src="images/menu.gif" align="absMiddle" border="0">
+                        &nbsp;<a href="admin_news_list.php" target="main">新闻列表</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="images/menu.gif" align="absMiddle" border="0">
+                        &nbsp;<a href="admin_news_add.php" target="main">新闻发布</a>
+                    </td>
+                </tr>
                 </tbody>
             </table>
         </td>
